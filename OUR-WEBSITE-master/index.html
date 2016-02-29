@@ -4,6 +4,57 @@
 <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="main.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://use.fonticons.com/5c3ef861.js"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 40%;
+      margin: auto;
+  }
+
+  ul {
+    overflow: auto;
+}
+ 
+ul li {
+    list-style-type: none;
+    float: left;
+}
+ 
+ul li a i {
+    background: #205D7A;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 10px;
+    padding-top: 15%;
+    transition: all 0.2s ease-in-out;
+}
+.fa-facebook {
+    background:#3b5998
+} 
+.fa-instagram {
+    background:#007bb6
+}
+.fa-twitter {
+    background:#00aced
+}
+.google-plus {
+    background:#dd4b39
+}
+ul li a i:hover {
+    opacity: .7;
+}
+
+
+</style>
+  </style>
 
 <title> Cooking With Kids </title>
 </head>
@@ -14,94 +65,116 @@
 <div class='jumbotron'>
 <div class='container'>
 
-<h1> Cooking with Kids </h1>
 
+</div>
 
-<ul class='nav nav-tabs'>
-      <li role='presentation' class='active'><a href='https://www.google.co.uk/'>About Us</a></li>
-      <li role='presentation' class='active'><a href='https://www.google.co.uk/'>Recipes</a></li>
+<nav class='navbar navbar-inverse'>
+<div class='container-fluid'>
+<div class='navbar-header'>
+<a class='navbar-brand' href=''>Cooking with Kids</a>
+</div>
+<ul class='nav navbar-nav'>
+      <li class='active'><a href='https://www.google.co.uk/'>About Us</a></li>
+      <li role='presentation' class='active'><a href='recipes.html'>Recipes</a></li>
       <li role='presentation' class='active'><a href='https://www.google.co.uk/'>Resources</a></li>
-      <li role='presentation' class='active'><a href='https://www.google.co.uk/'>Contact Us</a></li>
+     
 
 </ul>
+<ul class='nav navbar-nav navbar-right'>
+<li><a href='signup.html'><span class='glyphicon glyphicon-user'></span> Sign Up</a></li>
 </div>
-</div>
+</nav>
+
+
 
 </header>
 
 
-<div class="container">
+  <ul>
+<li><a href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+<li><a href="http://instagram.com/"><i class="fa fa-instagram"></i></a></li>
+<li><a href="http://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+<li><a href="http://plus.google.com/"><i class="fa fa-google-plus"></i> </a></li>
+</ul> 
+  
 
-<p class="text-center" class="lead"> This is our website about cooking for kids</p>
 
-<p class="text-center" class="lead"> Feel free to get in touch if you have any questions or would like more yummy receipes on the website! </p>
-
-<div id="emailsubmit">
-<input type="email" placeholder="Your email"> <input type="submit">
-</div>
-
-</div>
 
 <br>
 <br>
 
 <div class="container">
 
-<h1 class="text-center">Super yummy everyday Gluten and Dairy Free recipes ! <br> <small> Which one will you try? </small> </h1>
+<h2 class="text-center">Super yummy everyday Gluten and Dairy Free recipes ! <br> <small> Which one will you try? </small> </h2>
 
 </div>
 
 <br>
 
 
-<div class="container" class='row'>
 
-      <div class='col-sm-4'>
-          <img src='images/nut.png' class="img-thumbnail">
 
-          <p class='text-center'>
-              <h2> <a href="Nutella.html">Nourishing Nutella</a> <br> 
-                <small> <em>The perfect snack for any time of day </em> </small>
-              </h2>
-          </p>
 
+
+<br>
+<br>
+
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/nut2.jpg" alt="nut" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="images/pizza2.jpg" alt="pizza" width="460" height="345">
       </div>
     
-      <div class='col-sm-4'>
-          <img src='images/pizza.png' class="img-thumbnail">
-         <p class='text-center'>  
-               <h2> <a href="pizza.html"> Pizza Crust </a> <br> <small> <em> Enough to fill the whole family </em> </small> </h2>
-        </p>
-
+      <div class="item">
+        <img src="images/broc2.jpg" alt="broc" width="460" height="345">
       </div>
+
+      
+  </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<br>
+<br>
+
+
+
+
+     
+   
+
     
-      <div class='col-sm-4'>
-        <img src='images/sandwich.png' class="img-thumbnail">
-        <p class='text-center'>
-         <h2> <a href="brocoli.html"> Brocoli Side </a> <br> <small> <em> A healthy side for any dish </em> </small> </h2>
-        </p>
-      </div> 
-
-    </div>
-
-
-
-<br>
-<br>
-
-
-<div class="container">
-
-    <div id='social-buttons' class="text-center">
-      <button class= 'btn btn-lg' class='btn-twitter'>Twitter </button>
-      <button class= 'btn btn-lg' class='btn-facebook'>Facebook</button>
-      <button class= 'btn btn-lg' class='btn-pinterest'>Pinterest</button>
-
-    </div>
 
 </div>
 
 <br>
+
+
 
 
 </body>
